@@ -40,7 +40,7 @@ jobs:
           yarn build
 
       - name: Zip artifact for deployment
-        run: zip zip next.zip ./* .next .env -qr
+        run: zip next.zip ./* .next .env -qr
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
